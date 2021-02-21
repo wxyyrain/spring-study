@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean name="A" class="mySpring.pojo.A">
+        <property name="name" value="i am a"/>
+        <property name="b" ref="B"/>
+    </bean>
+
+    <bean name="B" class="mySpring.pojo.B">
+        <property name="name" value="i am b"/>
+        <property name="c" ref="C"/>
+    </bean>
+
+    <bean name="C" class="mySpring.pojo.C">
+        <property name="name" value="i am c"/>
+        <property name="a" ref="A"/>
+    </bean>
+</beans>
