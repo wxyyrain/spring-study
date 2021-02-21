@@ -1,0 +1,10 @@
+org\example\pojo\School.class
+org\example\pojo\Klass.class
+org\example\pojo\ISchool.class
+org\example\pojo\Student.class
+org\example\config\KlassAutoConfigure.class
+org\example\config\Student123Properties.class
+META-INF\spring-configuration-metadata.json
+org\example\config\SchoolAutoConfigure.class
+org\example\config\StudentAutoConfigure.class
+org\example\config\Student100Properties.class

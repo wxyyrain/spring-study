@@ -1,0 +1,39 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.example.config.Student100Properties",
+      "name": "my.service.student100",
+      "type": "org.example.config.Student100Properties"
+    },
+    {
+      "sourceType": "org.example.config.Student123Properties",
+      "name": "my.service.student123",
+      "type": "org.example.config.Student123Properties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "org.example.config.Student100Properties",
+      "defaultValue": 0,
+      "name": "my.service.student100.id",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "org.example.config.Student100Properties",
+      "name": "my.service.student100.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.example.config.Student123Properties",
+      "defaultValue": 0,
+      "name": "my.service.student123.id",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "org.example.config.Student123Properties",
+      "name": "my.service.student123.name",
+      "type": "java.lang.String"
+    }
+  ]
+}
