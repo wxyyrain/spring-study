@@ -29,7 +29,9 @@ public class ZmqConsumer<T> {
 
     public ZmqMessage<T> poll(long timeout) {
         ZmqMessage message = zmq.poll(offset, timeout);
-        offset++;
+        if (message != null) {
+            offset++;
+        }
         return message;
     }
 }

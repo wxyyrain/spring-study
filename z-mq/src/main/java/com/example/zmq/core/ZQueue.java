@@ -10,6 +10,7 @@ public class ZQueue<T> {
 
     private int offset;
 
+
     private Object[] queue;
 
     private ReentrantLock lock = new ReentrantLock();
@@ -55,7 +56,9 @@ public class ZQueue<T> {
             if (offset == 0) {
                 notEmpty.await(timeout, timeUnit);
             }
-//            int index = offset - 1;
+            if (offset > capacity) {
+                return null;
+            }
             return (ZmqMessage<T>) queue[offset];
         } catch (Exception e) {
             e.printStackTrace();
